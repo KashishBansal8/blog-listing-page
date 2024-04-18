@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+
+/* Filter Section */
+.filter-cont {
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 30px;
+}
+
+/* Sort Filter */
+.sort-filter-cont {
+  width: 30%;
+}
+
+.sort-filter-cont select {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+
+/* Search Filter */
+.search-cont {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.search-cont input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 0 20px;
+  font-size: 18px;
+  outline: none;
+}
+
+.search-icon {
+  width: 25px;
+  margin: 0 15px;
+}
+
+/* Blog Listing Page */
+.blog-listing-page {
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 50px 30px;
+  justify-content: center;
+}
+
+.no-blog-section {
+  font-size: 22px;
+  margin: 30px;
+}
+
+/* Blog Card */
+.blog-card {
+  width: 30%;
+  max-height: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.blog-card .top-visited-blog {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.blog-card .image-section {
+  height: 200px;
+}
+
+.blog-card img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-card-content {
+  padding: 0 20px 10px 20px;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.blog-author-section,
+.blog-date-section {
+  gap: 15px;
+  align-items: center;
+}
+
+.blog-author-section img {
+  width: 30px;
+}
+
+.date-section {
+  font-size: 12px;
+}
+
+.blog-date-section img {
+  height: 24px;
+  width: unset;
+}
+
+.blog-view-btn {
+  width: max-content;
+  padding: 4px 20px;
+  background: brown;
+  color: white;
+  border: 1px solid brown;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+  align-self: flex-end;
+}
+
+/* Blog Description Page */
+.blog-description-page {
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  margin: 60px 30px;
+}
+
+.blog-description-page .blog-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.blog-author {
+  text-transform: capitalize;
+}
